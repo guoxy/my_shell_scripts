@@ -9,7 +9,7 @@ function fileexist() {
  function filebackup(){
           tar -xtf backup.tar $1
           gzip backup.tar
-          mv backup.tar.gz §2
+          mv backup.tar.gz $2
           }
 fileexist
 filebackup
